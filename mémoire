@@ -1,0 +1,22 @@
+/*.reseaux a, i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    margin-left: 30px;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+<div class="reseaux">
+<a href="#" title="instagram"><i class='bx bxl-instagram-alt'></i></a>
+<a href="#" title="X"><i class='bx bxl-twitter'></i></a>
+<a href="#" title="youtube"><i class='bx bxl-youtube'></i></a>
+<a href="#"></a>
+</div>

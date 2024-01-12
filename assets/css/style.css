@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lemon', serif;
+    font-family: 'Salsa', cursive;
+}
+
+body {
+    background: black;
+    
+}
+
+
+.VideoBox video {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    z-index: 0;
+    box-shadow: 13px 13px 13px black;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Lemon', serif;
+}
+
+.logo img {
+    width: 70px;
+    vertical-align: middle;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 550px;
+    margin-left: 35px;
+}
+
+
+
+/*CONTENT CLOUDY */
+.content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 10 0;
+}
+
+.home-cloud img{
+    width: 255px;
+    border-radius: 800px;
+}
+
+.cloudy {
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(21, 52, 226, 0.39));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.title-content {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.253), rgba(21, 52, 226, 0.077));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+
+/*Section CLOUDY CONTAINER */
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }
+  
+  hr::after {
+    content: '☁️';
+    padding: 0 9px;
+    position: relative;
+    top: -13px;
+  }
+
+
+
+.band_grid{
+    background: rgb(26, 25, 25);
+    
+}
+
+.container h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.container img{
+    position: relative;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-left: 150px;
+    vertical-align: middle;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(21, 52, 226, 0.39));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+
+
+/* Images Cloudy */
+.img01-02 {
+    display: inline-flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    color: #fff;
+   
+}
+
+.img01-02 img {
+    margin: 0 auto;
+}
+
+.img01-02 h2, .img01-02 p {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 10px 10px 70px;
+    box-shadow: 10px 70;
+    margin-left: 50px;
+    
+}
+
+
+.img01-02 h2 {
+    font-size: 30px;
+}
+.img01-02 p { 
+    font-size: 25px;
+}
+
+
+
+.img01-03 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    justify-content: flex-end;
+    color: #fff;
+    margin-left: 900px;
+}
+
+.img01-03 h2, .img01-03 p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 10px 10px 70px;
+}
+
+.img01-03 h2 {
+    font-size: 30px;
+}
+.img01-03 p { 
+    font-size: 25px;
+}
+
+
+.img01-03 img {
+    margin: 0 auto; 
+}
+
+
+
+
+
+.img01-04 {
+    display: inline-flex;
+    flex-direction: column; 
+    align-items: center; 
+    color: #fff;
+    margin-right: 900px;
+}
+
+.img01-04 img {
+    margin: 0 auto;
+}
+
+.img01-04 h2, .img01-04 p {
+    display: flex;
+    color: #fff;
+    padding: 10px 10px 70px;
+    box-shadow: 10px 70;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.img01-04 h2 {
+    font-size: 30px;
+}
+
+.img01-04 p { 
+    font-size: 25px;
+}
+
+
+
+
+
+
+/* SECTION */ 
+
