@@ -489,7 +489,7 @@ body {
   background-color: #fff;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(34, 31, 31, 0.925);
   text-align: center;
 }
 
@@ -504,13 +504,14 @@ body {
   font-size: 18px;
   line-height: 1.6;
   margin-top: 20px;
-  color: #555;
+  color: #ffffff;
   grid-column: span 4;
 }
 
 .service {
   background-color: #fff;
   border-radius: 20px;
+  max-width: 600px;
   padding: 30px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -530,7 +531,7 @@ body {
 .service p {
   font-size: 16px;
   line-height: 1.6;
-  color: #555;
+  color: #ffffff;
 }
 
 .navbar a.cart-link {
@@ -544,4 +545,99 @@ body {
 .navbar a.cart-link:hover {
   background-color: #4ca1f0;
   color: #fff;
+}
+
+/* LORD CLOUDY */
+
+.LORD {
+  text-align: center;
+  margin: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+  animation: fadeInUp 1s ease-out;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkpoint {
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+
+  animation: fadeIn 1s ease-out;
+}
+
+.checkpoint h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  animation: fadeInLeft 1s ease-out;
+}
+
+.checkpoint p {
+  line-height: 1.6;
+  animation: fadeInRight 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .checkpoint {
+    max-width: 100%;
+  }
 }
