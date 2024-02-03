@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1200px) {
+  .img01-02,
+  .img01-03,
+  .img01-04 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* Pour les sections .img01-02, .img01-03, .img01-04 sur les petits écrans */
+@media only screen and (max-width: 600px) {
+  .img01-02,
+  .img01-03,
+  .img01-04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .img01-02 h2,
+  .img01-02 p,
+  .img01-03 h2,
+  .img01-03 p,
+  .img01-04 h2,
+  .img01-04 p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Pour les sections .avis */
+@media only screen and (max-width: 900px) {
+  .avis {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avis img {
+    height: auto;
+  }
+}
+
+/* Pour la section .playGames-content */
+@media only screen and (max-width: 768px) {
+  .playGames-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .playGames-Valo,
+  .playGames-CSGO,
+  .playGames-LOL {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .playGames-CSGO img {
+    width: 100%; /* Modification pour que l'image CSGO occupe la largeur totale du conteneur */
+  }
+}
