@@ -1,225 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      body {
-        margin: 0;
-        font-family: "Arial", sans-serif;
-      }
 
-      .header-2 {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 15px 10%;
-        background: linear-gradient(
-          135deg,
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+    }
+
+    .header-2 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px 10%;
+      background: linear-gradient(135deg,
           #4ca1f0 0%,
-          rgba(0, 0, 0, 0.089) 100%
-        );
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-        border-radius: 20px;
-        border: 2px solid transparent;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-        vertical-align: middle;
-      }
+          rgba(0, 0, 0, 0.089) 100%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      border-radius: 20px;
+      border: 2px solid transparent;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+      vertical-align: middle;
+    }
 
-      .navbar {
-        display: flex;
-      }
+    .navbar {
+      display: flex;
+    }
 
-      .navbar a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        transition: color 0.3s ease;
-      }
+    .navbar a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
 
-      .navbar a:hover {
-        color: #4ca1f0;
-      }
+    .navbar a:hover {
+      color: #4ca1f0;
+    }
 
-      .container-services {
-        padding: 80px 10%;
-        text-align: center;
-      }
+    .container-services {
+      padding: 80px 10%;
+      text-align: center;
+    }
 
-      .content-services {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 40px;
-        margin-top: 20px;
-        box-shadow: 0 4px 16px 0 rgba(41, 36, 36, 0.596);
-        text-align: center;
-      }
+    .content-services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 40px;
+      margin-top: 20px;
+      box-shadow: 0 4px 16px 0 rgba(41, 36, 36, 0.596);
+      text-align: center;
+    }
 
-      .content-services h2 {
-        font-size: 3.5em;
-        margin-bottom: 20px;
-        color: #333;
-        grid-column: span 4;
-      }
+    .content-services h2 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+      color: #333;
+      grid-column: span 4;
+    }
 
-      .content-services p {
-        font-size: 18px;
-        line-height: 1.6;
-        margin-top: 20px;
-        color: #555;
-        grid-column: span 4;
-      }
+    .content-services p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 20px;
+      color: #555;
+      grid-column: span 4;
+    }
 
-      .service {
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
-        text-align: left;
-      }
+    .service {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
 
-      .service h2 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        color: #4ca1f0;
-      }
+    .service h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #4ca1f0;
+    }
 
-      .service p {
-        font-size: 18px;
-        line-height: 1.6;
-        color: #555;
-      }
+    .service p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+    }
 
-      .navbar a.cart-link {
-        color: #4ca1f0;
-        border: 2px solid #4ca1f0;
-        padding: 8px 15px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
+    .navbar a.cart-link {
+      color: #4ca1f0;
+      border: 2px solid #4ca1f0;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-      .navbar a.cart-link:hover {
-        background-color: #4ca1f0;
-        color: #fff;
-      }
-    </style>
-    <title>Nos services ☁️</title>
-  </head>
+    .navbar a.cart-link:hover {
+      background-color: #4ca1f0;
+      color: #fff;
+    }
+  </style>
+  <title>Nos services ☁️</title>
+</head>
 
-  <body class="white-body">
-    <header class="header-2">
-      <a href="index.html" class="logo">
-        <img src="/images/image0-2-2.png" title="CLOUDY" />CLOUDY MUSE</a
-      >
+<body class="white-body">
+  <header class="header-2">
+    <a href="index.html" class="logo">
+      <img src="/images/image0-2-2.png" title="CLOUDY" />CLOUDY MUSE</a>
 
-      <nav class="navbar">
-        <a href="index.html">Accueil</a>
-        <a href="#">Nos services</a>
-        <a href="/Lord.html">Le Lord</a>
-        <a
-          href="https://store.streamelements.com/bakihoo?cartId=x68vWulCT9mJ23rrbkk5Dw"
-          class="cart-link"
-          >Shop<i class="bx bx-cart"></i
-        ></a>
-      </nav>
-    </header>
+    <nav class="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="#">Nos services</a>
+      <a href="/Lord.html">Le Lord</a>
+      <a href="https://store.streamelements.com/bakihoo?cartId=x68vWulCT9mJ23rrbkk5Dw" class="cart-link">Shop<i
+          class="bx bx-cart"></i></a>
+    </nav>
+  </header>
 
-    <section class="container-services">
-      <div class="content-services">
-        <h2>Nos services</h2>
+  <section class="container-services">
+    <div class="content-services">
+      <h2>Nos services</h2>
+      <p>
+        Nous offrons de nombreuses possibilités d’entraînements grâce à nos
+        coachs et nos programmes d’entraînement 100% gratuits dans n’importe
+        quel jeu disponible sur notre serveur, ainsi qu’une possibilité
+        d’évolution de vos réseaux grâce à la pub dû à vos passages en stream
+        de vos scrim.
+      </p>
+
+      <div class="service">
+        <h2>Coaching</h2>
         <p>
-          Nous offrons de nombreuses possibilités d’entraînements grâce à nos
-          coachs et nos programmes d’entraînement 100% gratuits dans n’importe
-          quel jeu disponible sur notre serveur, ainsi qu’une possibilité
-          d’évolution de vos réseaux grâce à la pub dû à vos passages en stream
-          de vos scrim.
+          Nos services de Coaching visent à libérer votre potentiel et vous
+          guider vers la réussite. Devenez notre partenaire. Ensemble, nous
+          gagnerons n’importe quel tournoi.
         </p>
-
-        <div class="service">
-          <h2>Coaching</h2>
-          <p>
-            Nos services de Coaching visent à libérer votre potentiel et vous
-            guider vers la réussite. Devenez notre partenaire. Ensemble, nous
-            gagnerons n’importe quel tournoi.
-          </p>
-        </div>
-
-        <div class="service">
-          <h2>Formation</h2>
-          <p>
-            Nous croyons en la capacité de transformation qui découle de la
-            connaissance. Nos programmes de formation sont conçus avec soin pour
-            améliorer les compétences, renforcer la confiance et encourager
-            l’innovation.
-          </p>
-        </div>
-
-        <div class="service">
-          <h2>Gestion</h2>
-          <p>
-            Nous privilégions une approche holistique en veillant à
-            l’optimisation de chaque aspect de vos opérations pour parvenir à
-            des performances maximales. En nous concentrant sur la stratégie et
-            l’adaptabilité, nous transformons les visions en résultats
-            tangibles. Que vous aspiriez à atteindre le rang de Master Radiant
-            ou bien le niveau 10 sur Faceit, nos services sont à votre portée.
-          </p>
-        </div>
-
-        <div class="service">
-          <h2>Assistance</h2>
-          <p>
-            Derrière chaque équipe se cache une opportunité d’assistance
-            inégalée. Nous comprenons la complexité de vos besoins et nous nous
-            engageons à vous assister rapidement à chaque étape.
-          </p>
-        </div>
       </div>
-    </section>
 
-    <footer>
-      <div class="Contact-we"><h2>Contact</h2></div>
-      <div class="container">
-       
-        <div class="social-icons">
-          <a href="https://www.youtube.com/@Cloudy-Muse" target="_blank"
-            ><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c545.png" title="Youtube"
-          /></a>
-          <a href="cloudymuse.wordpress.com" target="_blank"
-            ><img src="https://about.twitter.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.1920.png" title="X"
-          /></a>
-          <a href="https://www.instagram.com/cloudy._.muse?igsh=MTE0aGNtYjMwaGZvcw%3D%3D" target="_blank"
-            ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" title="Instagram"
-          /></a>
-        </div>
-        <div class="footer-contact">
-          
-          <a
-            href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=CllgCJqSwKSrpDgvCLTJzSmXSMzmRhfZQTfFqDVclrdMXghsVqJfvCCkfjfGQZpHkLcxvHpbZkL"
-            ><span>cloudy.muse.cm@gmail.com</a></span>
-        </div>
+      <div class="service">
+        <h2>Formation</h2>
+        <p>
+          Nous croyons en la capacité de transformation qui découle de la
+          connaissance. Nos programmes de formation sont conçus avec soin pour
+          améliorer les compétences, renforcer la confiance et encourager
+          l’innovation.
+        </p>
       </div>
-    </footer>
-  </body>
+
+      <div class="service">
+        <h2>Gestion</h2>
+        <p>
+          Nous privilégions une approche holistique en veillant à
+          l’optimisation de chaque aspect de vos opérations pour parvenir à
+          des performances maximales. En nous concentrant sur la stratégie et
+          l’adaptabilité, nous transformons les visions en résultats
+          tangibles. Que vous aspiriez à atteindre le rang de Master Radiant
+          ou bien le niveau 10 sur Faceit, nos services sont à votre portée.
+        </p>
+      </div>
+
+      <div class="service">
+        <h2>Assistance</h2>
+        <p>
+          Derrière chaque équipe se cache une opportunité d’assistance
+          inégalée. Nous comprenons la complexité de vos besoins et nous nous
+          engageons à vous assister rapidement à chaque étape.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.youtube.com/@Cloudy-Muse">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link"
+          href="https://x.com/i/flow/login?redirect_after_login=%2FEquipesCM">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/cloudy._.muse/">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link"
+          href="https://mail.google.com/mail/u/3/#inbox?compose=GTvVlcSMTtkQdVXNLNxdqkDCHBKrBJzMXkflzSsSMKkHXhtbtTnpNCZXqckcdfwhzKmDKrvQcSMXz">Contact</a>
+      </li>
+    </ul>
+
+    <p>&copy; 2024 Cloudy Muse</p>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
